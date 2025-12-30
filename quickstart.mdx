@@ -1,0 +1,129 @@
+---
+title: Getting Started with George
+description: Quickly set up your George account and create your first documentation space to begin organizing your projects.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: A GitHub account for easy content import
+
+<Callout kind="info">
+
+George works best with browsers supporting ES2022+ features. Update your browser if needed.
+
+</Callout>
+
+## Create Your George Account
+
+Follow these steps to sign up and log in.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="monitor">
+    Navigate to `https://dashboard.george.com` in your browser.
+  </Step>
+  <Step title="Sign Up" icon="user-plus">
+    Click **Sign Up** and enter your email, name, and a secure password.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for the verification link and click it to activate your account.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the dashboard, enter your credentials, and access your workspace.
+  </Step>
+</Steps>
+
+## Set Up Your First Documentation Space
+
+Create a dedicated space for your project docs.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+    From the dashboard, click **New Space** and name it (e.g., `MyProjectDocs`).
+  </Step>
+  <Step title="Configure Basics" icon="settings">
+    Set the space visibility to **Private** or **Public**, and add a description like "Documentation for MyProject".
+  </Step>
+  <Step title="Save and Enter" icon="check-circle">
+    Save the space and click **Enter** to view the editor.
+  </Step>
+</Steps>
+
+## Import Initial Content
+
+Add your first pages using these methods.
+
+<Tabs>
+  <Tab title="GitHub Repo" icon="github">
+    Connect your GitHub repo for automatic import.
+
+    <Steps>
+      <Step title="Authorize George" icon="key">
+        Click **Import from GitHub** and authorize the app.
+      </Step>
+      <Step title="Select Repo" icon="git-branch">
+        Choose your repo (e.g., `yourusername/myproject-docs`) and branch (e.g., `main`).
+      </Step>
+    </Steps>
+
+    <Callout kind="tip">
+      Ensure your repo contains `.mdx` files in the root or `docs/` folder.
+    </Callout>
+  </Tab>
+  <Tab title="Manual Upload" icon="upload">
+    Upload files directly.
+
+    ```bash
+    # Prepare your MDX files locally
+    mkdir myproject-docs
+    echo "# Welcome" > myproject-docs/index.mdx
+    ```
+
+    Drag and drop files into the **Upload** zone or use the file picker.
+  </Tab>
+</Tabs>
+
+<CodeGroup tabs="MDX,Markdown">
+  ```mdx
+  ---
+  title: Welcome to MyProject
+  description: Your project documentation starts here.
+  ---
+
+  ## Quick Overview
+
+  George makes documentation easy.
+  ```
+  ```markdown
+  # Welcome to MyProject
+
+  ## Quick Overview
+
+  George makes documentation easy.
+  ```
+</CodeGroup>
+
+## Explore the Dashboard
+
+Discover key features with these quick links.
+
+<Columns cols={3}>
+  <Card title="Editor" icon="edit-3" href="/docs/editor">
+    Create and edit MDX pages with live preview.
+  </Card>
+  <Card title="Spaces" icon="folder" href="/docs/spaces">
+    Manage multiple documentation spaces.
+  </Card>
+  <Card title="Publish" icon="globe" href="/docs/publishing">
+    Deploy your docs to a custom domain.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+
+Congratulations! You've set up George. Next, explore the [Editor](/docs/editor) for advanced formatting.
+
+</Callout>

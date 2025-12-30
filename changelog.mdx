@@ -1,0 +1,112 @@
+---
+title: Changelog
+description: Stay updated with the latest releases, features, and improvements in George.
+---
+
+## Recent Updates
+
+George releases updates regularly to enhance your documentation experience. You receive notifications in your dashboard and via email when new versions deploy. Check the tags on each release to identify breaking changes, new features, or bug fixes quickly.
+
+<Callout kind="info">
+  Enable notifications in your account settings to stay informed about new releases automatically.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration, allowing multiple users to edit documents simultaneously.
+- Introduced AI-powered content suggestions to help you draft documentation faster.
+- New version history viewer with diff comparisons.
+
+## Improvements
+
+- Enhanced search performance by `>50%` for large documentation spaces.
+- Improved mobile responsiveness for the editor interface.
+
+## Bug Fixes
+
+- Fixed issue where embedded images failed to load in preview mode.
+- Resolved sync delays during offline editing.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Customizable themes and brand colors for your documentation sites.
+- Integrated analytics dashboard to track page views and user engagement.
+- Support for Mermaid diagrams in code blocks.
+
+## Bug Fixes
+
+- Corrected export to PDF rendering issues with tables.
+- Fixed authentication errors during SSO login flows.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## Breaking Changes
+
+- Removed legacy Markdown parser in favor of MDX v2 for better component support.
+
+## New Features
+
+- Initial release with full MDX documentation builder.
+- Page templates for quickstarts, authentication guides, and changelogs.
+- API for programmatic documentation management.
+
+## Improvements
+
+- Optimized build times for large documentation sites.
+
+</Update>
+
+## Upgrading George
+
+Follow these steps to upgrade to the latest version seamlessly.
+
+<Steps>
+  <Step title="Check Current Version" icon="check-circle">
+
+    View your current version in the dashboard settings.
+
+  </Step>
+  <Step title="Review Changelog" icon="book-open">
+
+    Scan for breaking changes above.
+
+  </Step>
+  <Step title="Run Upgrade" icon="zap">
+    
+    Use the CLI or dashboard upgrade button.
+
+````bash
+george upgrade
+````
+
+  </Step>
+  <Step title="Verify Installation" icon="shield-check">
+
+    Test your documentation site after upgrade.
+
+  </Step>
+</Steps>
+
+<Columns cols={3}>
+  <Card title="Introduction" icon="book-open" href="/introduction">
+    Get started with George basics.
+  </Card>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Build your first documentation page.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your documentation space.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+  After upgrading, explore the new AI features in your next editing session.
+</Callout>

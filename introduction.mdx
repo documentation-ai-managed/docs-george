@@ -1,0 +1,106 @@
+---
+title: Introduction to George
+description: Welcome to George, your default documentation space designed to help you organize and manage all your project documentation efficiently.
+---
+
+## Overview
+
+George provides a centralized hub for your project documentation. You create, organize, and collaborate on docs without leaving your workflow. Built for teams, it supports version control, search, and integrations to streamline knowledge sharing.
+
+<Callout kind="info">
+  George integrates seamlessly with your existing tools like GitHub, Notion, and Slack.
+</Callout>
+
+## Key Features
+
+Explore the core capabilities that make George your go-to documentation platform.
+
+<Columns cols={3}>
+  <Card title="Dynamic Organization" icon="folder-tree" href="#organization">
+    Nest pages, use tags, and create custom hierarchies to keep docs structured.
+  </Card>
+  <Card title="Real-time Collaboration" icon="users" href="#collaboration">
+    Edit with your team simultaneously with live previews and comments.
+  </Card>
+  <Card title="Advanced Search" icon="search" href="#search">
+    Find content instantly across all docs with semantic search and filters.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get up and running in minutes. Follow these steps to create your first documentation page.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Visit `https://george.example.com` and create your account with email or GitHub.
+  </Step>
+  <Step title="Create Workspace" icon="home">
+    Set up a new workspace for your project. Name it and add team members.
+  </Step>
+  <Step title="Add First Doc" icon="plus">
+    Click the `+ New Page` button. Use the MDX editor to write your content.
+  </Step>
+  <Step title="Publish" icon="globe">
+    Preview changes, then publish. Share the public link with your team.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="JavaScript,Python">
+```javascript
+// Embed George docs in your app
+import { GeorgeEmbed } from '@george/docs-sdk';
+
+<GeorgeEmbed workspaceId="your-workspace-id" pageId="doc-123" />
+```
+
+```python
+# Python integration example
+from george_docs import embed_doc
+
+embed_doc(workspace_id="your-workspace-id", page_id="doc-123")
+```
+</CodeGroup>
+
+## Navigation Guide
+
+Navigate George efficiently using these common paths.
+
+<Tabs>
+  <Tab title="Sidebar" icon="menu">
+    Use the left sidebar for quick access to workspaces, recent pages, and search.
+    
+    - Click `Workspaces` to switch projects
+    - `Recent` shows your last viewed docs
+    - `Search` bar finds anything instantly
+  </Tab>
+  <Tab title="Top Bar" icon="navigation-2">
+    Global actions like `New Page`, `Settings`, and user profile.
+    
+    <Image
+      src="https://via.placeholder.com/800x200/3B82F6/white?text=Top+Bar"
+      alt="George top navigation bar"
+      width="800"
+      height="200"
+    />
+  </Tab>
+  <Tab title="Keyboard Shortcuts" icon="keyboard">
+    Speed up with hotkeys:
+    
+    | Action          | Shortcut     |
+    |-----------------|--------------|
+    | New Page        | `Cmd/Ctrl + N` |
+    | Search          | `Cmd/Ctrl + K` |
+    | Preview         | `Cmd/Ctrl + P` |
+  </Tab>
+</Tabs>
+
+## Team Benefits
+
+<Expandable title="Why Teams Choose George" default-open="true">
+  George boosts productivity by 40% through centralized knowledge. You reduce onboarding time, minimize errors from outdated docs, and foster collaboration. Custom permissions ensure secure access, while analytics track doc usage.
+</Expandable>
+
+<Callout kind="tip">
+  Ready for more? Check [Quickstart](/quickstart) for advanced setup or [Authentication](/authentication) for team access.
+</Callout>
